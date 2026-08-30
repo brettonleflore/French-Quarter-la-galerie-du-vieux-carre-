@@ -50,15 +50,3 @@ document.getElementById('form')?.addEventListener('submit',e=>{
   }),{threshold:[0,.12,.5]});
   films.forEach(v=>io.observe(v));
 })();
-
-(()=>{
-  const film=document.querySelector('.old-walls-film');
-  const sound=document.getElementById('filmSound');
-  if(!film||!sound) return;
-  sound.addEventListener('click',async()=>{
-    film.muted=!film.muted;
-    sound.textContent=film.muted?'Sound on':'Sound off';
-    sound.setAttribute('aria-label',film.muted?'Turn film sound on':'Turn film sound off');
-    if(!film.muted) try{await film.play()}catch(e){}
-  });
-})();
