@@ -38,3 +38,29 @@ url("assets/hero-approved.jpg") center/cover fixed}.stay h1{font-size:clamp(62px
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-actions a{color:#f4ead9;text-decoration:none;border:1px solid rgba(220,184,119,.8);padding:15px 22px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;background:rgba(15,12,9,.18);backdrop-filter:blur(3px)}
 @media(max-width:760px){.hero-video{height:82svh;min-height:620px}.hero-film{width:100%;height:100%;left:0;transform:none;object-position:center center}.hero-copy{left:22px;bottom:8%;width:calc(100% - 44px)}.hero-kicker{font-size:8px;margin-bottom:15px}.hero-copy h1{font-size:15vw;line-height:.86}.hero-deck{font-size:17px;margin:20px 0 24px}.hero-actions a{padding:13px 15px;font-size:8px}.hero-shade{background:linear-gradient(0deg,rgba(10,8,6,.7) 0%,rgba(10,8,6,.28) 58%,rgba(10,8,6,.1) 100%)}}
 @media(prefers-reduced-motion:reduce){.hero-film{display:none}.hero-video{background:url("assets/hero-approved.jpg") center/cover no-repeat}}
+
+/* Immersive oil-painting gateway */
+.painting-gateway{--walk:0;position:relative;min-height:720px;height:min(94vh,960px);overflow:hidden;background:#160f0a;isolation:isolate}
+.hero-painting,.painting-gateway .hero-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%}
+.hero-painting{z-index:0;opacity:1;transform:scale(1.015);filter:saturate(.88) contrast(1.05) sepia(.08)}
+.painting-gateway .hero-film{z-index:1;opacity:0;transform:scale(1.045);transition:opacity 1.8s cubic-bezier(.22,.61,.36,1),transform 4s ease;filter:saturate(.82) contrast(1.05) brightness(.86) sepia(.08)}
+.painting-gateway.is-entered .hero-film{opacity:1;transform:scale(1.018)}
+.paint-canvas{position:absolute;inset:-4%;z-index:2;pointer-events:none;opacity:.68;transition:opacity 2.2s ease;background:radial-gradient(ellipse at 50% 45%,transparent 35%,rgba(48,29,14,.14) 80%,rgba(22,14,9,.36) 100%),repeating-linear-gradient(8deg,rgba(241,220,179,.035) 0 1px,transparent 1px 4px),repeating-linear-gradient(95deg,rgba(69,43,22,.025) 0 1px,transparent 1px 5px);mix-blend-mode:soft-light;filter:url("#none")}
+.painting-gateway.is-entered .paint-canvas{opacity:.18}
+.painting-gateway:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:radial-gradient(circle at 24% 28%,rgba(208,155,76,.16),transparent 23%),radial-gradient(circle at 80% 62%,rgba(88,59,31,.12),transparent 31%);mix-blend-mode:overlay;opacity:.8}
+.painting-gateway .hero-shade{z-index:3}
+.painting-gateway .hero-copy{z-index:4;transition:opacity 1.2s ease,transform 1.2s ease}
+.painting-gateway.is-entered .hero-copy{opacity:.18;transform:translateY(-12px);pointer-events:none}
+.enter-painting{display:inline-flex;align-items:center;gap:28px;color:#f5ead8;border:1px solid rgba(220,184,119,.88);padding:15px 20px;background:rgba(18,13,8,.25);font:500 9px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;cursor:pointer;backdrop-filter:blur(4px)}
+.enter-painting b{font-size:18px;font-weight:300;transition:transform .35s ease}.enter-painting:hover b{transform:translateX(5px)}
+.walk-ui{position:absolute;z-index:5;left:7vw;right:7vw;bottom:5.5%;color:#f2e7d4;opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity 1.1s ease .7s,transform 1.1s ease .7s}
+.painting-gateway.is-entered .walk-ui{opacity:1;transform:none;pointer-events:auto}
+.walk-labels{display:flex;justify-content:space-between;gap:12px;margin-bottom:8px;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#dec28f;text-shadow:0 1px 10px #000}
+.walk-progress{width:100%;height:2px;appearance:none;background:linear-gradient(90deg,#d6b270 calc(var(--walk)*1%),rgba(237,221,193,.32) 0);border-radius:0;cursor:ew-resize;accent-color:#d6b270}
+.walk-progress::-webkit-slider-thumb{appearance:none;width:14px;height:14px;border-radius:50%;background:#efe1c8;border:1px solid #8d6c3d;box-shadow:0 0 0 5px rgba(221,186,119,.12)}
+.walk-controls{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;margin-top:12px}
+.walk-controls button{border:0;background:transparent;color:#f1e5d2;padding:8px 0;font:500 8px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+.walk-controls #walkStatus{text-align:center;font-family:var(--serif);font-style:italic;font-size:13px;color:#dcc9aa}
+.arrive-balcony{opacity:0;transform:translateX(8px);transition:.5s ease!important;color:#e4c488!important}.painting-gateway.near-arrival .arrive-balcony{opacity:1;transform:none}
+@media(max-width:760px){.painting-gateway{height:84svh;min-height:650px}.hero-painting,.painting-gateway .hero-film{object-position:center center}.walk-ui{left:20px;right:20px;bottom:4%}.walk-labels span:nth-child(2){display:none}.walk-controls{grid-template-columns:auto 1fr}.walk-controls #walkStatus{display:none}.arrive-balcony{grid-column:1/3;text-align:right!important}.painting-gateway.is-entered .hero-copy{opacity:0}.enter-painting{gap:18px}}
+@media(prefers-reduced-motion:reduce){.painting-gateway .hero-film{display:none!important}.painting-gateway .hero-painting{opacity:1!important}.paint-canvas{opacity:.4!important}.enter-painting{display:none}.walk-ui{display:none}}

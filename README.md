@@ -30,3 +30,6 @@ Photography has been web-optimized at high quality (progressive JPEG, quality 88
 
 ## GitHub compact edition
 This deployment keeps only assets actually referenced by the live site. Photography remains up to 2000px on the long edge with high-quality progressive JPEG compression, and the stabilized hero video is H.264 web-optimized with fast-start. This reduces repository upload size without changing the visual design or applying blur to the photographs.
+
+## Immersive painting walkthrough
+The homepage now opens as the original painterly hero. Selecting **Enter the Painting** crossfades into a slow cinematic walkthrough. Visitors can pause or scrub the passage, and the final state offers a direct transition into the **Galerie Balcony** gallery. The effect is implemented with CSS/JS overlays over the existing optimized video, so it adds essentially no deployment weight.

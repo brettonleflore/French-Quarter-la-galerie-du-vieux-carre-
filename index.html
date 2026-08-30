@@ -8,16 +8,30 @@
 <div class="grain"></div>
 
 <!-- Keep the previously approved oil-painting opening -->
-<section class="hero hero-video" id="top">
-  <video class="hero-film" autoplay muted loop playsinline preload="metadata" poster="assets/hero-approved.jpg" aria-label="La Galerie du Vieux Carré">
+<section class="hero hero-video painting-gateway" id="top">
+  <img class="hero-painting" src="assets/hero-approved.jpg" alt="Painterly view of La Galerie du Vieux Carré">
+  <video class="hero-film" muted playsinline preload="metadata" poster="assets/hero-approved.jpg" aria-label="A slow cinematic walk through La Galerie du Vieux Carré toward the galerie balcony">
     <source src="assets/video/hero-stabilized.mp4" type="video/mp4">
   </video>
+  <div class="paint-canvas" aria-hidden="true"></div>
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="hero-copy">
     <p class="hero-kicker">A PRIVATE RESIDENCE · NEW ORLEANS</p>
     <h1>La Galerie<br><em>du Vieux Carré</em></h1>
     <p class="hero-deck">Live inside the atmosphere of the French Quarter.</p>
-    <div class="hero-actions"><a href="#galleries">Explore the Residence</a><a href="#stay">Book Your Stay</a></div>
+    <div class="hero-actions">
+      <button class="enter-painting" id="enterPainting" type="button"><span>Enter the Painting</span><b aria-hidden="true">→</b></button>
+      <a href="#galleries">Explore the Residence</a>
+    </div>
+  </div>
+  <div class="walk-ui" id="walkUi" aria-hidden="true">
+    <div class="walk-labels"><span>Courtyard</span><span>Inside the Residence</span><span>Galerie Balcony</span></div>
+    <input id="walkProgress" class="walk-progress" type="range" min="0" max="1000" value="0" aria-label="Move through the residence">
+    <div class="walk-controls">
+      <button id="walkToggle" type="button" aria-label="Pause walkthrough">Pause</button>
+      <span id="walkStatus" aria-live="polite">Walking through the painting…</span>
+      <button id="arriveBalcony" class="arrive-balcony" type="button">Arrive at the Galerie →</button>
+    </div>
   </div>
 </section>
 
