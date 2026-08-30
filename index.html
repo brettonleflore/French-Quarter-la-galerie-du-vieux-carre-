@@ -1,70 +1,174 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>La Galerie du Vieux Carré | Historic French Quarter Residence</title>
-<meta name="description" content="Stay in a work of history at La Galerie du Vieux Carré, a private historic residence in New Orleans.">
+<meta name="description" content="Stay inside the atmosphere of the Vieux Carré at La Galerie du Vieux Carré.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css"></head><body>
 <div class="grain"></div>
-<section class="hero" id="top"><img src="assets/hero-approved.jpg" alt="La Galerie du Vieux Carré painterly opening">
-<nav><a href="#residence">La Résidence</a><a href="#galleries">Galleries</a><a href="#experience">Expérience</a><a href="#tour">3D Tour</a><a href="#stay">Inquire</a></nav>
-<a class="hero-book" href="#stay" aria-label="Book your stay"></a></section>
 
-<section class="residence" id="residence"><div><p class="folio">LGVC / 001 · LA RÉSIDENCE</p><h1>A Residence<br>of Character</h1><i></i>
-<p>Exposed brick, heart pine, antique iron and rooms shaped by time. La Galerie du Vieux Carré is an invitation to inhabit the French Quarter rather than simply visit it.</p>
-<em>Curated with care. Preserved with soul.</em><a href="#galleries">Explore the residence →</a></div>
-<figure><img src="assets/dining-room-level-2/B09A0559(1).jpeg" alt="Historic interior"></figure></section>
+<!-- Keep the previously approved oil-painting opening -->
+<section class="hero" id="top">
+  <img src="assets/hero-approved.jpg" alt="La Galerie du Vieux Carré — Live the French Quarter Painting">
+  <a class="hero-gallery-link" href="#galleries" aria-label="Explore the galleries"></a>
+  <a class="hero-book-link" href="#stay" aria-label="Book your stay"></a>
+</section>
 
 <div class="quote">— ✦ — &nbsp; <em>“There is a certain magic that lives in these old walls.”</em> &nbsp; — ✦ —</div>
 
-<section class="index" id="galleries"><header><p class="folio">LGVC / 002</p><h1>Explore the Residence</h1><p>Room by room. Level by level. Every photograph below is the residence itself.</p></header><div class="cards"><a class="card" href="#living-room-level-2"><img src="assets/living-room-level-2/B09A0575(1).jpeg" alt="Living Room" loading="lazy"><div><b>Living Room</b><span>Level 2</span></div></a><a class="card" href="#dining-room-level-2"><img src="assets/dining-room-level-2/B09A0559(1).jpeg" alt="Dining Room" loading="lazy"><div><b>Dining Room</b><span>Level 2</span></div></a><a class="card" href="#kitchen-level-2"><img src="assets/kitchen-level-2/B09A0551(1).jpeg" alt="Kitchen" loading="lazy"><div><b>Kitchen</b><span>Level 2</span></div></a><a class="card" href="#bathroom-1-level-2"><img src="assets/bathroom-1-level-2/B09A0599(2).jpeg" alt="Bathroom 1" loading="lazy"><div><b>Bathroom 1</b><span>Level 2</span></div></a><a class="card" href="#bathroom-2-level-2"><img src="assets/bathroom-2-level-2/B09A0547.jpeg" alt="Bathroom 2" loading="lazy"><div><b>Bathroom 2</b><span>Level 2</span></div></a><a class="card" href="#bedroom-1-level-2"><img src="assets/bedroom-1-level-2/B09A0607(1).jpeg" alt="Bedroom 1" loading="lazy"><div><b>Bedroom 1</b><span>Level 2</span></div></a><a class="card" href="#galerie-balcony-level-2"><img src="assets/galerie-balcony-level-2/B09A0583.jpeg" alt="Galerie Balcony" loading="lazy"><div><b>Galerie Balcony</b><span>Level 2</span></div></a><a class="card" href="#bedroom-2-level-3"><img src="assets/bedroom-2-level-3/B09A0547.jpeg" alt="Bedroom 2" loading="lazy"><div><b>Bedroom 2</b><span>Level 3</span></div></a><a class="card" href="#efficiency-studio-ground-level"><img src="assets/efficiency-studio-ground-level/B09A0643(1).jpeg" alt="Efficiency Studio" loading="lazy"><div><b>Efficiency Studio</b><span>Ground Level</span></div></a><a class="card" href="#courtyard-ground-level"><img src="assets/courtyard-ground-level/B09A0527(1).jpeg" alt="Courtyard" loading="lazy"><div><b>Courtyard</b><span>Ground Level</span></div></a></div></section>
+<section class="gallery-hub" id="galleries">
+  <header class="hub-head"><p>LGVC / THE GALLERIES</p><h1>Explore the Residence</h1><span>Choose a room. Move through its photographs without leaving the gallery.</span></header>
+  <div class="tabs" role="tablist"><button class="room-tab active" data-room="living" aria-selected="true">
+      <span class="tab-art"><img src="assets/rooms/living/living-01.jpg" alt=""></span>
+      <span class="tab-name">Living Room</span><small>Level 2</small>
+    </button><button class="room-tab" data-room="dining" aria-selected="false">
+      <span class="tab-art"><img src="assets/rooms/dining/dining-01.jpg" alt=""></span>
+      <span class="tab-name">Dining Room</span><small>Level 2</small>
+    </button><button class="room-tab" data-room="kitchen" aria-selected="false">
+      <span class="tab-art"><img src="assets/rooms/kitchen/kitchen-01.jpg" alt=""></span>
+      <span class="tab-name">Kitchen</span><small>Level 2</small>
+    </button><button class="room-tab" data-room="bathroom1" aria-selected="false">
+      <span class="tab-art"><img src="assets/rooms/bathroom1/bathroom1-01.jpg" alt=""></span>
+      <span class="tab-name">Bathroom 1</span><small>Level 2</small>
+    </button><button class="room-tab" data-room="bedroom1" aria-selected="false">
+      <span class="tab-art"><img src="assets/rooms/bedroom1/bedroom1-01.jpg" alt=""></span>
+      <span class="tab-name">Bedroom 1</span><small>Level 2</small>
+    </button><button class="room-tab" data-room="balcony" aria-selected="false">
+      <span class="tab-art"><img src="assets/rooms/balcony/balcony-01.jpg" alt=""></span>
+      <span class="tab-name">Galerie Balcony</span><small>Level 2</small>
+    </button><button class="room-tab" data-room="bedroom2" aria-selected="false">
+      <span class="tab-art"><img src="assets/rooms/bedroom2/bedroom2-01.jpg" alt=""></span>
+      <span class="tab-name">Bedroom 2 + En Suite Bath</span><small>Level 3</small>
+    </button><button class="room-tab" data-room="studio" aria-selected="false">
+      <span class="tab-art"><img src="assets/rooms/studio/studio-01.jpg" alt=""></span>
+      <span class="tab-name">Efficiency Studio</span><small>Ground Level</small>
+    </button><button class="room-tab" data-room="courtyard" aria-selected="false">
+      <span class="tab-art"><img src="assets/rooms/courtyard/courtyard-01.jpg" alt=""></span>
+      <span class="tab-name">Courtyard</span><small>Ground Level</small>
+    </button></div>
+  <div class="panels"><section class="gallery-panel active" data-panel="living">
+      <div class="gallery-copy">
+        <p>Le Salon · LEVEL 2</p><h2>Living Room</h2>
+        
+        <div class="counter"><span class="current">01</span> / <span>02</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/living/living-01.jpg" alt="Living Room">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/living/living-01.jpg" alt="Living Room view 1"></button><button class="thumb" data-index="1"><img src="assets/rooms/living/living-02.jpg" alt="Living Room view 2"></button></div>
+    </section><section class="gallery-panel" data-panel="dining">
+      <div class="gallery-copy">
+        <p>La Salle à Manger · LEVEL 2</p><h2>Dining Room</h2>
+        
+        <div class="counter"><span class="current">01</span> / <span>02</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/dining/dining-01.jpg" alt="Dining Room">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/dining/dining-01.jpg" alt="Dining Room view 1"></button><button class="thumb" data-index="1"><img src="assets/rooms/dining/dining-02.jpg" alt="Dining Room view 2"></button></div>
+    </section><section class="gallery-panel" data-panel="kitchen">
+      <div class="gallery-copy">
+        <p>La Cuisine · LEVEL 2</p><h2>Kitchen</h2>
+        
+        <div class="counter"><span class="current">01</span> / <span>03</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/kitchen/kitchen-01.jpg" alt="Kitchen">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/kitchen/kitchen-01.jpg" alt="Kitchen view 1"></button><button class="thumb" data-index="1"><img src="assets/rooms/kitchen/kitchen-02.jpg" alt="Kitchen view 2"></button><button class="thumb" data-index="2"><img src="assets/rooms/kitchen/kitchen-03.jpg" alt="Kitchen view 3"></button></div>
+    </section><section class="gallery-panel" data-panel="bathroom1">
+      <div class="gallery-copy">
+        <p>La Salle de Bain · LEVEL 2</p><h2>Bathroom 1</h2>
+        
+        <div class="counter"><span class="current">01</span> / <span>02</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/bathroom1/bathroom1-01.jpg" alt="Bathroom 1">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/bathroom1/bathroom1-01.jpg" alt="Bathroom 1 view 1"></button><button class="thumb" data-index="1"><img src="assets/rooms/bathroom1/bathroom1-02.jpg" alt="Bathroom 1 view 2"></button></div>
+    </section><section class="gallery-panel" data-panel="bedroom1">
+      <div class="gallery-copy">
+        <p>La Chambre I · LEVEL 2</p><h2>Bedroom 1</h2>
+        
+        <div class="counter"><span class="current">01</span> / <span>02</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/bedroom1/bedroom1-01.jpg" alt="Bedroom 1">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/bedroom1/bedroom1-01.jpg" alt="Bedroom 1 view 1"></button><button class="thumb" data-index="1"><img src="assets/rooms/bedroom1/bedroom1-02.jpg" alt="Bedroom 1 view 2"></button></div>
+    </section><section class="gallery-panel" data-panel="balcony">
+      <div class="gallery-copy">
+        <p>La Galerie · LEVEL 2</p><h2>Galerie Balcony</h2>
+        
+        <div class="counter"><span class="current">01</span> / <span>04</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/balcony/balcony-01.jpg" alt="Galerie Balcony">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/balcony/balcony-01.jpg" alt="Galerie Balcony view 1"></button><button class="thumb" data-index="1"><img src="assets/rooms/balcony/balcony-02.jpg" alt="Galerie Balcony view 2"></button><button class="thumb" data-index="2"><img src="assets/rooms/balcony/balcony-03.jpg" alt="Galerie Balcony view 3"></button><button class="thumb" data-index="3"><img src="assets/rooms/balcony/balcony-04.jpg" alt="Galerie Balcony view 4"></button></div>
+    </section><section class="gallery-panel" data-panel="bedroom2">
+      <div class="gallery-copy">
+        <p>La Chambre II · LEVEL 3</p><h2>Bedroom 2 + En Suite Bath</h2>
+        <p class="ensuite-note">Bathroom 2 is the private en suite within Bedroom 2 on Level 3 and is presented as part of this room—not as a separate room.</p>
+        <div class="counter"><span class="current">01</span> / <span>01</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/bedroom2/bedroom2-01.jpg" alt="Bedroom 2 + En Suite Bath">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/bedroom2/bedroom2-01.jpg" alt="Bedroom 2 + En Suite Bath view 1"></button></div>
+    </section><section class="gallery-panel" data-panel="studio">
+      <div class="gallery-copy">
+        <p>L’Appartement · GROUND LEVEL</p><h2>Efficiency Studio</h2>
+        
+        <div class="counter"><span class="current">01</span> / <span>04</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/studio/studio-01.jpg" alt="Efficiency Studio">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/studio/studio-01.jpg" alt="Efficiency Studio view 1"></button><button class="thumb" data-index="1"><img src="assets/rooms/studio/studio-02.jpg" alt="Efficiency Studio view 2"></button><button class="thumb" data-index="2"><img src="assets/rooms/studio/studio-03.jpg" alt="Efficiency Studio view 3"></button><button class="thumb" data-index="3"><img src="assets/rooms/studio/studio-04.jpg" alt="Efficiency Studio view 4"></button></div>
+    </section><section class="gallery-panel" data-panel="courtyard">
+      <div class="gallery-copy">
+        <p>La Cour · GROUND LEVEL</p><h2>Courtyard</h2>
+        
+        <div class="counter"><span class="current">01</span> / <span>04</span></div>
+      </div>
+      <div class="gallery-stage">
+        <button class="arrow prev" aria-label="Previous photo">←</button>
+        <img class="main-photo" src="assets/rooms/courtyard/courtyard-01.jpg" alt="Courtyard">
+        <button class="arrow next" aria-label="Next photo">→</button>
+      </div>
+      <div class="thumbstrip"><button class="thumb active" data-index="0"><img src="assets/rooms/courtyard/courtyard-01.jpg" alt="Courtyard view 1"></button><button class="thumb" data-index="1"><img src="assets/rooms/courtyard/courtyard-02.jpg" alt="Courtyard view 2"></button><button class="thumb" data-index="2"><img src="assets/rooms/courtyard/courtyard-03.jpg" alt="Courtyard view 3"></button><button class="thumb" data-index="3"><img src="assets/rooms/courtyard/courtyard-04.jpg" alt="Courtyard view 4"></button></div>
+    </section></div>
+</section>
 
-<section class="room" id="living-room-level-2">
-      <header><span>01</span><div><p>LE SALON · LEVEL 2</p><h2>Living Room</h2></div></header>
-      <div class="room-grid n4"><figure><img src="assets/living-room-level-2/B09A0575(1).jpeg" alt="Living Room at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/living-room-level-2/B09A0575.jpeg" alt="Living Room at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/living-room-level-2/B09A0579(1).jpeg" alt="Living Room at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/living-room-level-2/B09A0579.jpeg" alt="Living Room at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="dining-room-level-2">
-      <header><span>02</span><div><p>LA SALLE À MANGER · LEVEL 2</p><h2>Dining Room</h2></div></header>
-      <div class="room-grid n4"><figure><img src="assets/dining-room-level-2/B09A0559(1).jpeg" alt="Dining Room at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/dining-room-level-2/B09A0559.jpeg" alt="Dining Room at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/dining-room-level-2/B09A0563(1).jpeg" alt="Dining Room at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/dining-room-level-2/B09A0563.jpeg" alt="Dining Room at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="kitchen-level-2">
-      <header><span>03</span><div><p>LA CUISINE · LEVEL 2</p><h2>Kitchen</h2></div></header>
-      <div class="room-grid n3"><figure><img src="assets/kitchen-level-2/B09A0551(1).jpeg" alt="Kitchen at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/kitchen-level-2/B09A0551.jpeg" alt="Kitchen at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/kitchen-level-2/B09A0555.jpeg" alt="Kitchen at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="bathroom-1-level-2">
-      <header><span>04</span><div><p>LA SALLE DE BAIN · LEVEL 2</p><h2>Bathroom 1</h2></div></header>
-      <div class="room-grid n3"><figure><img src="assets/bathroom-1-level-2/B09A0599(2).jpeg" alt="Bathroom 1 at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/bathroom-1-level-2/B09A0599.jpeg" alt="Bathroom 1 at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/bathroom-1-level-2/B09A0603.jpeg" alt="Bathroom 1 at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="bathroom-2-level-2">
-      <header><span>05</span><div><p>LA SALLE DE BAIN II · LEVEL 2</p><h2>Bathroom 2</h2></div></header>
-      <div class="room-grid n1"><figure><img src="assets/bathroom-2-level-2/B09A0547.jpeg" alt="Bathroom 2 at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="bedroom-1-level-2">
-      <header><span>06</span><div><p>LA CHAMBRE I · LEVEL 2</p><h2>Bedroom 1</h2></div></header>
-      <div class="room-grid n3"><figure><img src="assets/bedroom-1-level-2/B09A0607(1).jpeg" alt="Bedroom 1 at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/bedroom-1-level-2/B09A0607.jpeg" alt="Bedroom 1 at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/bedroom-1-level-2/B09A0611.jpeg" alt="Bedroom 1 at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="galerie-balcony-level-2">
-      <header><span>07</span><div><p>LA GALERIE · LEVEL 2</p><h2>Galerie Balcony</h2></div></header>
-      <div class="room-grid n4"><figure><img src="assets/galerie-balcony-level-2/B09A0583.jpeg" alt="Galerie Balcony at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/galerie-balcony-level-2/B09A0587(4).jpeg" alt="Galerie Balcony at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/galerie-balcony-level-2/B09A0587(6).jpeg" alt="Galerie Balcony at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/galerie-balcony-level-2/B09A0595(2).jpeg" alt="Galerie Balcony at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="bedroom-2-level-3">
-      <header><span>08</span><div><p>LA CHAMBRE II · LEVEL 3</p><h2>Bedroom 2</h2></div></header>
-      <div class="room-grid n1"><figure><img src="assets/bedroom-2-level-3/B09A0547.jpeg" alt="Bedroom 2 at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="efficiency-studio-ground-level">
-      <header><span>09</span><div><p>L’APPARTEMENT · GROUND LEVEL</p><h2>Efficiency Studio</h2></div></header>
-      <div class="room-grid n4"><figure><img src="assets/efficiency-studio-ground-level/B09A0643(1).jpeg" alt="Efficiency Studio at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/efficiency-studio-ground-level/B09A0647.jpeg" alt="Efficiency Studio at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/efficiency-studio-ground-level/B09A0651-2(1).jpeg" alt="Efficiency Studio at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/efficiency-studio-ground-level/B09A0659.jpeg" alt="Efficiency Studio at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
-<section class="room" id="courtyard-ground-level">
-      <header><span>10</span><div><p>LA COUR · GROUND LEVEL</p><h2>Courtyard</h2></div></header>
-      <div class="room-grid n4"><figure><img src="assets/courtyard-ground-level/B09A0527(1).jpeg" alt="Courtyard at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/courtyard-ground-level/B09A0531.jpeg" alt="Courtyard at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/courtyard-ground-level/B09A0619(2).jpeg" alt="Courtyard at La Galerie du Vieux Carré" loading="lazy"></figure><figure><img src="assets/courtyard-ground-level/B09A0627(2).jpeg" alt="Courtyard at La Galerie du Vieux Carré" loading="lazy"></figure></div>
-    </section>
+<section class="experience">
+  <p>LGVC / L’EXPÉRIENCE</p><h1>Stay inside<br><em>the painting.</em></h1>
+  <span>The page carries the atmosphere of an oil painting; the house itself is shown with crisp, true photography.</span>
+</section>
 
-<section class="experience" id="experience"><p class="folio">LGVC / 013 · L’EXPÉRIENCE</p><h1>Stay inside<br><em>the painting.</em></h1><p>The romance begins as a painting and resolves into the real house: crisp brick, worn timber, wrought iron, courtyard light and the unmistakable atmosphere of the Vieux Carré.</p></section>
+<section class="tour" id="tour">
+  <div><p>LGVC / DIGITAL TWIN</p><h1>Walk through<br>before you arrive.</h1></div>
+  <iframe title="La Galerie du Vieux Carré 3D Tour" src="https://my.matterport.com/show/?m=3wJhsnciyr5&play=1&qs=1&vr=0&dh=0&gt=0&hr=0" allow="xr-spatial-tracking; fullscreen; autoplay" allowfullscreen loading="lazy"></iframe>
+</section>
 
-<section class="tour" id="tour"><div><p class="folio">LGVC / 014 · DIGITAL TWIN</p><h1>Walk through<br>before you arrive.</h1><p>Explore the residence itself in three dimensions.</p></div><iframe title="Historic French Quarter Home 3D Tour" src="https://my.matterport.com/show/?m=3wJhsnciyr5&play=1&qs=1&vr=0&dh=0&gt=0&hr=0" allow="xr-spatial-tracking; fullscreen; autoplay" allowfullscreen loading="lazy"></iframe></section>
+<section class="stay" id="stay"><p>LGVC / PRIVATE STAYS</p><h1>Come for New Orleans.<br><em>Stay for the house.</em></h1>
+<form id="form"><label>Arrival<input type="date" required></label><label>Departure<input type="date" required></label><label>Guests<select><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label><label>Email<input type="email" required placeholder="you@example.com"></label><button>INQUIRE TO BOOK →</button><small id="note">Connect this form to your live booking destination before launch.</small></form></section>
 
-<section class="stay" id="stay"><p class="folio">LGVC / 015 · PRIVATE STAYS</p><h1>Come for New Orleans.<br><em>Stay for the house.</em></h1><p>For a few nights, live inside a real French Quarter painting.</p>
-<form id="form"><label>Arrival<input type="date" required></label><label>Departure<input type="date" required></label><label>Guests<select><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label><label>Email<input type="email" placeholder="you@example.com" required></label><button>INQUIRE TO BOOK →</button><small id="note">Connect this form to your booking destination before launch.</small></form></section>
-<footer><b>LG<br>VC</b><h2>La Galerie du Vieux Carré</h2><p>New Orleans, Louisiana</p><small>ROOTED IN HISTORY. CURATED FOR YOU.</small></footer>
+<footer><b>LG<br>VC</b><h2>La Galerie du Vieux Carré</h2><span>NEW ORLEANS, LOUISIANA</span></footer>
 <script src="script.js"></script></body></html>

@@ -1,29 +1,14 @@
-# La Galerie du Vieux Carré — Full Plan
+# La Galerie du Vieux Carré — Tabbed Galleries Edition
 
-Final organization:
-- Living Room — Level 2
-- Dining Room — Level 2
-- Kitchen — Level 2
-- Bathroom 1 — Level 2
-- Bathroom 2 — Level 2
-- Bedroom 1 — Level 2
-- Galerie Balcony — Level 2
-- Bedroom 2 — Level 3
-- Efficiency Studio — Ground Level
-- Courtyard — Ground Level
-
-Design:
-- approved painterly editorial opening retained
-- all room/gallery photography is real supplied photography
-- no blur or focus effects are applied to gallery photos
-- Galerie / Architectural Digest-inspired parchment, oxblood, antique-gold and deep-green visual system
-- Matterport tour embedded
-- street address omitted from website copy
-
-
-## Galerie Oil Edition changes
-- Approved new painterly hero retained as the visual master.
-- Oil-painting atmosphere now continues behind every major section through layered pigment, canvas/grain, parchment and subtle hero-derived texture.
-- Painterly effects are intentionally NOT applied to the room photographs.
-- Property photographs are kept in focus, prepared at high JPEG quality, upscaled when needed with Lanczos, and given only restrained editorial contrast/color/sharpness corrections.
-- Existing room/level organization is preserved.
+Corrections and updates:
+- The previously approved oil-painting opening remains unchanged.
+- The long-scrolling room chapters have been replaced with a horizontal room-tab gallery.
+- Each room tab is intentionally given a painterly likeness treatment; the actual property gallery photographs are not.
+- All main gallery photographs remain crisp, unblurred and unfiltered.
+- Images are prepared from the highest-quality supplied originals available and saved at high JPEG quality.
+- Bathroom 1 contains both photographs previously split between Bathroom 1 and Bathroom 2.
+- There is no standalone Bathroom 2 tab.
+- Bathroom 2 is the en suite bathroom within Bedroom 2 on Level 3 and is described inside that room's gallery.
+- Room order: Living Room, Dining Room, Kitchen, Bathroom 1, Bedroom 1, Galerie Balcony, Bedroom 2 + En Suite Bath, Efficiency Studio, Courtyard.
+- The painterly background system continues throughout the site.
+- Matterport remains integrated and the street address is omitted from website copy.
