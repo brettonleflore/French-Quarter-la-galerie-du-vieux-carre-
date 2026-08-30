@@ -1,3 +1,2 @@
-window.addEventListener("load",()=>setTimeout(()=>document.getElementById("prelude").classList.add("hide"),1250));
-const form=document.getElementById("inquiryForm");form.addEventListener("submit",e=>{e.preventDefault();document.getElementById("formNote").textContent="This elevated preview is ready to connect to your live booking destination."});
-const hero=document.querySelector(".oil-glaze");window.addEventListener("scroll",()=>{let p=Math.min(scrollY/innerHeight,1);hero.style.opacity=String(.34-(p*.24));},{passive:true});
+const form=document.getElementById("inquiryForm");
+form.addEventListener("submit",e=>{e.preventDefault();document.getElementById("formNote").textContent="This preview is ready to connect to your live booking destination.";});
