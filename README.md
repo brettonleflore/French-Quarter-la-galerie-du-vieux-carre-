@@ -19,3 +19,11 @@ Design:
 - Galerie / Architectural Digest-inspired parchment, oxblood, antique-gold and deep-green visual system
 - Matterport tour embedded
 - street address omitted from website copy
+
+
+## Galerie Oil Edition changes
+- Approved new painterly hero retained as the visual master.
+- Oil-painting atmosphere now continues behind every major section through layered pigment, canvas/grain, parchment and subtle hero-derived texture.
+- Painterly effects are intentionally NOT applied to the room photographs.
+- Property photographs are kept in focus, prepared at high JPEG quality, upscaled when needed with Lanczos, and given only restrained editorial contrast/color/sharpness corrections.
+- Existing room/level organization is preserved.
