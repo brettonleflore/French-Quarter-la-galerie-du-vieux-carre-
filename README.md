@@ -1,20 +1,13 @@
-# La Galerie du Vieux Carré — Atelier Edition
+# La Galerie du Vieux Carré — Oil Painting Edition
 
-A ground-up editorial redesign based on the agreed creative direction.
+This edition implements the final art direction:
+- realistic, restrained 20th-century oil-painting atmosphere on the opening only
+- the painting resolves toward crisp real photography as the visitor enters the residence
+- dedicated photographic chapters for Living Room, Bedrooms, Courtyard, Balcony, and First-Floor Efficiency
+- original user-supplied property photography remains crisp and in focus; no gallery blur/filter effects
+- elevated Galerie / Architectural Digest editorial hierarchy throughout
+- quiet, high-end booking experience
+- Matterport 3D tour
+- no street address printed by the website
 
-Design system:
-- painterly-to-photographic hero transition
-- publication-style folio numbering
-- extreme typography / micro-caption contrast
-- asymmetrical magazine spreads
-- dedicated material studies
-- French editorial section language with English clarity
-- restrained gold, parchment, wine and oxidized-green palette
-- private location treatment; no street address printed by the site
-- embedded Matterport digital twin
-- quiet, non-commercial booking interface
-- responsive mobile art direction
-
-All residence photography in `/assets` comes from the user's supplied image set. The inquiry form is intentionally a preview until a live booking destination is supplied.
-
-Important: the Matterport iframe is hosted by Matterport. Any address metadata exposed by Matterport itself must be hidden in the owning Matterport account.
+The inquiry form remains a presentation form until a live booking URL/email is supplied. Matterport-hosted metadata is controlled separately by the Matterport owner.
