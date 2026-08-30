@@ -178,3 +178,133 @@ footer{background:#243027;color:#f5efe6}
  .hero-copy{padding-left:1.25rem;padding-right:1.25rem}
  .hero::after{background:linear-gradient(0deg,rgba(13,18,14,.52),rgba(13,18,14,.05) 70%)}
 }
+
+
+/* 2026 Parisian jewel-box refresh */
+:root{--jewel:#2a1020;--plum:#3a1428;--wine:#5a1f33;--merlot:#781f35;--lacquer:#161313;--brass:#c6a96c;--champagne:#eadcc5;--pearl:#fbf5eb;--ink:#1c1a18;--forest:#17241f;--oxblood:#76243a;--oxblood-deep:#491525;--ivory:#fbf5eb}
+body{background:var(--lacquer)}
+.grain{opacity:.045;mix-blend-mode:soft-light}
+.quote-ribbon{background:#4b1427;color:#f8ead6;border-color:rgba(234,220,197,.16)}
+.residence-intro{background:radial-gradient(circle at 78% 20%,rgba(134,59,70,.28),transparent 28%),linear-gradient(135deg,#1b1217 0%,#31131f 52%,#151715 100%);color:#f8efe5;position:relative;overflow:hidden}
+.residence-intro:before{content:"";position:absolute;inset:0;background:url('assets/rooms/living/living-02.jpg') center/cover;opacity:.13;mix-blend-mode:screen;filter:saturate(.65) contrast(1.1)}
+.residence-intro>*{position:relative}.intro-copy{padding:clamp(28px,4vw,60px);border:1px solid rgba(255,245,230,.2);background:linear-gradient(135deg,rgba(255,245,232,.11),rgba(255,255,255,.035));backdrop-filter:blur(22px) saturate(125%);box-shadow:0 30px 90px rgba(0,0,0,.28)}
+.intro-copy h2,.intro-copy h2 em{color:#fff3e7}.intro-lede{color:#d8cbbc}.section-kicker{color:#d7b57a}.text-link{color:#f6e9d8;border-color:rgba(246,233,216,.35)}.intro-image-small{border-color:#2c1820}.intro-images{filter:drop-shadow(0 32px 55px rgba(0,0,0,.35))}
+
+.residence-portal{position:relative;min-height:100svh;overflow:hidden;display:grid;align-content:center;padding:9vw clamp(24px,6vw,96px);background:#1a1115;color:#fff2e4;isolation:isolate}
+.portal-backdrop{position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,11,17,.86),rgba(21,11,17,.38) 55%,rgba(21,11,17,.58)),url('assets/rooms/bedroom1/bedroom1-new-05.jpg') center 48%/cover;z-index:-2;transform:scale(1.015)}
+.portal-backdrop:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 32%,rgba(188,125,86,.18),transparent 22%),linear-gradient(0deg,rgba(36,9,22,.48),transparent 60%)}
+.portal-glass{width:min(690px,74vw);padding:clamp(34px,5vw,72px);background:linear-gradient(135deg,rgba(73,27,47,.48),rgba(24,17,20,.28));border:1px solid rgba(246,225,198,.26);backdrop-filter:blur(26px) saturate(128%);box-shadow:0 35px 110px rgba(0,0,0,.42)}
+.portal-main h2{font-family:var(--serif);font-size:clamp(58px,7vw,110px);font-weight:400;line-height:.86;letter-spacing:-.055em;margin:15px 0 28px}.portal-main h2 em{font-weight:400;color:#e9c98e}.portal-main>p:not(.section-kicker){font-family:var(--serif);font-size:19px;line-height:1.6;color:#e3d4c3;max-width:540px}.jewel-link{display:inline-block;margin-top:28px;color:#fff3e4;text-decoration:none;text-transform:uppercase;letter-spacing:.2em;font-size:8px;border-bottom:1px solid rgba(255,243,228,.45);padding-bottom:8px}
+.portal-card{position:absolute;width:210px;height:145px;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff4e7;text-decoration:none;background:rgba(27,14,20,.38);border:1px solid rgba(255,236,213,.25);backdrop-filter:blur(18px) saturate(120%);box-shadow:0 22px 70px rgba(0,0,0,.28);transition:.35s ease}.portal-card:hover{transform:translateY(-6px);background:rgba(84,27,48,.46)}.portal-card span{font-size:7px;letter-spacing:.2em;text-transform:uppercase;color:#d8bb88}.portal-card b{font-family:var(--serif);font-size:24px;font-weight:400;margin-top:9px}.portal-card-one{right:7vw;top:19%}.portal-card-two{right:15vw;bottom:25%}.portal-card-three{right:5vw;bottom:8%}
+
+.experience{position:relative;overflow:hidden;background:#1c1017;color:#f7ecdf;min-height:84vh;display:flex;flex-direction:column;justify-content:center;isolation:isolate}.experience:before{content:"";position:absolute;inset:0;z-index:-2;background:url('assets/rooms/dining/dining-new-02.jpg') center/cover;filter:saturate(.78) brightness(.5)}.experience:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(38,8,22,.88),rgba(38,8,22,.38) 62%,rgba(15,19,16,.35))}.experience>p,.experience h1,.experience span{max-width:760px}.experience h1 em{color:#e4c78f}.experience span{color:#e5d6c7;background:rgba(255,244,230,.07);border:1px solid rgba(255,244,230,.14);backdrop-filter:blur(18px);padding:28px 32px;margin-top:20px}
+.tour{background:linear-gradient(145deg,#131b18,#1b2c25 55%,#26151d);}
+
+.long-stay{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center;background:linear-gradient(130deg,#29101e,#5c1d36 58%,#1a1917);color:#fff2e5;border:0;isolation:isolate}.stay-glow{position:absolute;width:44vw;height:44vw;border-radius:50%;right:-10vw;top:-15vw;background:radial-gradient(circle,rgba(211,155,95,.22),transparent 66%);filter:blur(6px);z-index:-1}.stay-copy h1{color:#fff4e8}.stay-copy h1 em{color:#eacb91}.stay-copy>p:first-child{color:#d8b678}.stay-lede{font-family:var(--serif);font-size:19px;line-height:1.65;color:#e6d7c7;max-width:610px}.stay-pill{display:inline-block;margin:16px 0 14px;padding:9px 12px;border:1px solid rgba(237,210,168,.35);background:rgba(255,244,229,.07);backdrop-filter:blur(14px);font-size:7px;letter-spacing:.22em;color:#efd4a5}.long-stay-form{display:grid!important;grid-template-columns:1fr 1fr!important;gap:20px 24px!important;margin-top:0!important;padding:clamp(28px,4vw,54px);background:linear-gradient(135deg,rgba(255,246,233,.13),rgba(255,255,255,.045));border:1px solid rgba(255,236,211,.24);backdrop-filter:blur(28px) saturate(120%);box-shadow:0 35px 100px rgba(0,0,0,.3)}.long-stay-form label{color:#e4ccb0}.long-stay-form input,.long-stay-form select{color:#fff3e6;border-color:rgba(255,237,217,.38)}.long-stay-form input::placeholder{color:#bea997}.long-stay-form button{grid-column:1/3!important;background:#f0ddbc!important;color:#31131f!important;border-color:#f0ddbc!important}.long-stay-form button:hover{background:transparent!important;color:#f0ddbc!important}.long-stay-form small{grid-column:1/3!important;color:#cbb9aa!important}
+
+/* Dedicated layered residence page */
+.residence-page{background:#160e13;color:#fff1e3}.residence-nav{position:fixed;z-index:50;top:18px;left:50%;transform:translateX(-50%);width:min(94vw,1380px);display:flex;justify-content:space-between;align-items:center;padding:12px 16px;color:#fff1e3;background:rgba(31,17,24,.38);border:1px solid rgba(255,239,219,.22);backdrop-filter:blur(24px) saturate(135%);box-shadow:0 16px 60px rgba(0,0,0,.2)}.residence-nav .brand{color:inherit}.residence-nav nav{display:flex;align-items:center;gap:26px}.residence-nav nav a{color:inherit;text-decoration:none;text-transform:uppercase;font-size:8px;letter-spacing:.16em}.residence-book{border:1px solid rgba(255,239,219,.42);padding:11px 14px;background:rgba(255,255,255,.08)}
+.residence-page-hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:10vh 6vw 7vh;overflow:hidden;isolation:isolate}.residence-page-bg{position:absolute;inset:0;z-index:-2;background:url('assets/rooms/living/living-new-04.jpg') center/cover;filter:saturate(.85) brightness(.7);transform:scale(1.015)}.residence-page-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(31,9,22,.77),rgba(31,9,22,.16) 60%),linear-gradient(0deg,rgba(17,12,13,.56),transparent 55%)}.residence-hero-glass{width:min(760px,78vw);padding:clamp(34px,5vw,70px);background:linear-gradient(135deg,rgba(75,24,47,.44),rgba(255,255,255,.035));border:1px solid rgba(255,236,212,.23);backdrop-filter:blur(28px) saturate(126%);box-shadow:0 30px 100px rgba(0,0,0,.34)}.residence-hero-glass p{font-size:8px;letter-spacing:.24em;color:#ddb980}.residence-hero-glass h1{font-family:var(--serif);font-size:clamp(70px,9vw,140px);font-weight:400;line-height:.78;letter-spacing:-.06em;margin:16px 0 30px}.residence-hero-glass h1 em{font-weight:400;color:#e7c889}.residence-hero-glass>span{display:block;font-family:var(--serif);font-size:20px;line-height:1.6;color:#e6d7c7;max-width:600px}.residence-hero-glass>a{display:inline-block;color:#fff0df;text-decoration:none;text-transform:uppercase;letter-spacing:.18em;font-size:8px;margin-top:30px}.floating-detail{position:absolute;padding:18px 20px;border:1px solid rgba(255,239,218,.2);background:rgba(31,16,23,.25);backdrop-filter:blur(18px);font-family:var(--serif);font-size:24px;line-height:.9}.floating-detail span{font-family:var(--sans);font-size:6px;letter-spacing:.2em}.floating-detail-a{right:8vw;top:24%}.floating-detail-b{right:18vw;bottom:16%}
+.residence-page .gallery-hub{background:radial-gradient(circle at 80% 18%,rgba(122,37,63,.22),transparent 28%),linear-gradient(145deg,#160f13,#28101c 55%,#121817);color:#fff0e1;padding-top:10vw}.residence-page .hub-head p,.residence-page .gallery-copy>p{color:#d9b479}.residence-page .hub-head span,.residence-page .ensuite-note{color:#cdbdac}.residence-page .room-tab{background:rgba(255,245,232,.07);border-color:rgba(255,237,214,.16);color:#fff1e2;backdrop-filter:blur(14px)}.residence-page .room-tab.active{border-color:#d2ae70;box-shadow:0 0 0 1px #d2ae70 inset}.residence-page .room-tab small{color:#baa99a}.residence-page .gallery-panel.active{padding:clamp(22px,3vw,48px);background:linear-gradient(135deg,rgba(255,245,231,.08),rgba(255,255,255,.025));border:1px solid rgba(255,236,211,.16);backdrop-filter:blur(22px);box-shadow:0 35px 100px rgba(0,0,0,.26)}.residence-page .gallery-stage,.residence-page .gallery-stage .main-photo{background:#151311}.residence-page .arrow{background:rgba(30,15,22,.58);color:#fff0df;border-color:rgba(255,239,219,.34);backdrop-filter:blur(18px)}.residence-page .counter{color:#d8b577}.residence-page .thumb.active{border-color:#d5af70}
+.residence-end{min-height:80vh;display:flex;align-items:center;justify-content:center;padding:8vw;background:linear-gradient(rgba(29,8,19,.68),rgba(29,8,19,.68)),url('assets/rooms/balcony/balcony-04.jpg') center/cover}.end-glass{text-align:center;padding:clamp(40px,6vw,80px);width:min(820px,90vw);background:rgba(41,17,28,.38);border:1px solid rgba(255,235,208,.22);backdrop-filter:blur(26px)}.end-glass p{font-size:8px;letter-spacing:.22em;color:#ddb879}.end-glass h2{font-family:var(--serif);font-weight:400;font-size:clamp(58px,7vw,100px);line-height:.88;margin:18px 0 30px}.end-glass h2 em{font-weight:400;color:#e3c082}.end-glass a{color:#fff0df;text-decoration:none;text-transform:uppercase;font-size:8px;letter-spacing:.18em}
+
+@media(max-width:900px){.portal-card{display:none}.portal-glass{width:100%}.long-stay{grid-template-columns:1fr}.residence-nav nav a:not(.residence-book){display:none}.floating-detail{display:none}.residence-hero-glass{width:100%}}
+@media(max-width:700px){.residence-portal{padding:18vh 20px 10vh}.portal-main h2{font-size:clamp(52px,15vw,78px)}.long-stay-form{grid-template-columns:1fr!important}.long-stay-form button,.long-stay-form small{grid-column:1!important}.residence-page-hero{padding:18vh 18px 4vh}.residence-hero-glass{padding:30px 24px}.residence-hero-glass h1{font-size:clamp(62px,20vw,94px)}.residence-page .gallery-hub{padding:20vw 16px 18vw}.residence-page .gallery-panel.active{display:block}.residence-page .gallery-copy{margin-bottom:22px}.residence-page .gallery-stage .main-photo{height:58vh;min-height:420px}.residence-nav{top:10px}.residence-nav .brand-name{display:none}}
+
+/* =========================================================
+   JEWEL BOX V2 — Parisian salon / layered luxury
+   ========================================================= */
+:root{
+  --j-ink:#16130f;
+  --j-ivory:#f2e9da;
+  --j-wine:#4b1726;
+  --j-aubergine:#29182b;
+  --j-green:#18352f;
+  --j-brass:#b28a4b;
+  --j-glass:rgba(246,236,220,.72);
+}
+body{
+  background:
+    radial-gradient(circle at 12% 16%,rgba(116,55,68,.22),transparent 31rem),
+    radial-gradient(circle at 86% 42%,rgba(29,74,63,.20),transparent 34rem),
+    linear-gradient(135deg,#21151d 0%,#3a1725 24%,#152d29 59%,#17120f 100%);
+  background-attachment:fixed;
+  color:var(--j-ivory);
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-5;
+  background-image:
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 85%,transparent);
+}
+.jewel-skin{
+  position:fixed;z-index:-3;pointer-events:none;top:7vh;height:86vh;width:min(24vw,330px);
+  border:1px solid rgba(210,175,111,.22);
+  background:linear-gradient(160deg,rgba(103,31,53,.28),rgba(13,46,40,.16));
+  backdrop-filter:blur(22px) saturate(120%);
+  box-shadow:0 35px 100px rgba(0,0,0,.28),inset 0 0 0 1px rgba(255,255,255,.03);
+}
+.jewel-skin-left{left:-13vw;border-radius:0 52% 52% 0}
+.jewel-skin-right{right:-15vw;top:18vh;border-radius:52% 0 0 52%;transform:rotate(-5deg)}
+.jewel-glow{position:fixed;z-index:-4;pointer-events:none;border-radius:50%;filter:blur(75px);opacity:.38}
+.jewel-glow-one{width:34rem;height:34rem;background:#772945;left:-8rem;top:25vh}
+.jewel-glow-two{width:30rem;height:30rem;background:#27584d;right:-6rem;top:56vh}
+.jewel-panel{
+  position:relative;
+  width:min(94vw,1480px);
+  margin:clamp(2rem,6vw,6rem) auto;
+  border:1px solid rgba(213,180,121,.23);
+  background:
+    linear-gradient(135deg,rgba(250,242,230,.82),rgba(235,219,199,.69));
+  color:var(--j-ink);
+  box-shadow:0 35px 90px rgba(0,0,0,.28);
+  backdrop-filter:blur(24px) saturate(128%);
+  -webkit-backdrop-filter:blur(24px) saturate(128%);
+  overflow:hidden;
+}
+.jewel-panel:before{
+  content:"";position:absolute;inset:10px;pointer-events:none;
+  border:1px solid rgba(111,69,39,.11);
+}
+.jewel-panel:after{
+  content:"";position:absolute;width:13rem;height:13rem;right:-5rem;top:-5rem;
+  border:1px solid rgba(114,62,73,.17);transform:rotate(45deg);pointer-events:none;
+}
+.residence-portal.jewel-panel{background:linear-gradient(120deg,rgba(245,235,220,.91),rgba(226,207,187,.73))}
+.experience.jewel-panel{background:linear-gradient(135deg,rgba(31,56,49,.92),rgba(45,21,35,.88));color:#f6eddf}
+.extended-stay.jewel-panel{background:linear-gradient(135deg,rgba(71,24,40,.94),rgba(32,45,39,.92));color:#f7eee1}
+.inquire.jewel-panel{background:linear-gradient(135deg,rgba(242,229,209,.92),rgba(213,191,163,.78))}
+.residence-layer{
+  min-height:72vh;
+  padding:clamp(3rem,7vw,7rem);
+}
+.residence-layer:nth-of-type(even){
+  transform:translateX(min(2.5vw,32px));
+}
+.residence-layer:nth-of-type(odd){
+  transform:translateX(max(-2.5vw,-32px));
+}
+.residence-layer img{
+  box-shadow:0 28px 65px rgba(25,15,10,.28);
+}
+h1,h2,h3{
+  text-wrap:balance;
+}
+.jewel-panel h2,.jewel-panel h3{
+  letter-spacing:-.035em;
+}
+a,button{transition:opacity .2s ease,background .25s ease,color .25s ease,border-color .25s ease}
+.painted-balcony-hero{
+  min-height:100svh;
+  margin:0;
+  border:0;
+}
+.painted-balcony-hero .painted-balcony-art{filter:saturate(.92) contrast(1.03) brightness(.92)}
+.painted-balcony-hero .painted-balcony-shade{background:linear-gradient(180deg,rgba(20,10,13,.04),rgba(20,10,13,.12))}
+@media(max-width:760px){
+  .jewel-skin{display:none}
+  .jewel-panel{width:calc(100% - 1.2rem);margin:1.2rem auto}
+  .residence-layer:nth-of-type(n){transform:none}
+}

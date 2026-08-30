@@ -25,7 +25,12 @@ panels.forEach(panel=>{
 document.getElementById('form')?.addEventListener('submit',e=>{
   e.preventDefault();
   const note=document.getElementById('note');
-  if(note) note.textContent='This presentation form is ready to connect to your live booking destination.';
+  const a=document.getElementById('arrival')?.value;
+  const d=document.getElementById('departure')?.value;
+  if(!a||!d){ if(note) note.textContent='Please choose arrival and departure dates.'; return; }
+  const nights=Math.round((new Date(d+'T12:00:00')-new Date(a+'T12:00:00'))/86400000);
+  if(nights<30){ if(note) note.textContent=`Extended stays require at least 30 nights. Your selected stay is ${Math.max(nights,0)} nights.`; return; }
+  if(note) note.textContent=`Thank you — your ${nights}-night stay qualifies. This inquiry form is ready to connect to your booking inbox or CRM.`;
 });
 
 // Opening: the approved painting holds the first frame; once the film is ready,
@@ -50,3 +55,6 @@ document.getElementById('form')?.addEventListener('submit',e=>{
   }),{threshold:[0,.12,.5]});
   films.forEach(v=>io.observe(v));
 })();
+
+// Deep-link directly to a room on the dedicated Residence page.
+(()=>{ const room=location.hash.replace('#',''); if(room && document.querySelector(`.room-tab[data-room="${room}"]`)){ activateRoom(room); setTimeout(()=>document.getElementById('galleries')?.scrollIntoView({behavior:'smooth'}),80); } })();
