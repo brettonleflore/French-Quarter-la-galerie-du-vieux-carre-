@@ -24,3 +24,157 @@
 
 @media(max-width:900px){.site-nav{grid-template-columns:1fr auto;height:82px;padding:16px 18px}.desktop-nav{display:none}.book-nav{padding:11px 13px}.brand-name{font-size:12.5px}.brand-mark{width:40px;height:40px}.cinema-hero{height:100svh;min-height:650px}.opening-film{object-position:center center}.cinema-shade{background:linear-gradient(0deg,rgba(11,13,11,.65) 0%,rgba(11,13,11,.22) 58%,rgba(11,13,11,.07) 100%)}.opening-live-copy{left:22px;bottom:8%;width:calc(100% - 44px)}.opening-live-copy h1{font-size:15vw;line-height:.87}.eyebrow{font-size:7.5px;margin-bottom:14px}.hero-deck{font-size:17px;margin:18px 0 22px;max-width:94%}.hero-actions{gap:8px}.hero-actions a{padding:12px 13px;font-size:7px}.scroll-cue{display:none}.quote-ribbon{min-height:58px;padding:14px 18px;gap:10px}.quote-ribbon em{font-size:14px;white-space:normal}.quote-ribbon span{width:22px}.residence-intro{grid-template-columns:1fr;padding:18vw 22px 20vw;gap:12vw}.intro-copy h2{font-size:15vw}.intro-lede{font-size:18px;margin:24px 0 28px}.intro-images{min-height:118vw}.intro-image-main{inset:0 11% 10% 0}.intro-image-small{width:40%;height:40%;border-width:8px}.gallery-hub{padding:18vw 12px}.hub-head{margin-bottom:9vw}.tabs{margin:0 -2px 9vw}.room-tab{flex-basis:128px}.tab-art{height:98px}.gallery-panel.active{grid-template-columns:1fr;grid-template-areas:"copy" "stage" "thumbs";gap:18px}.gallery-copy{padding:0 8px}.gallery-copy h2{font-size:14vw}.gallery-stage{min-height:0}.gallery-stage .main-photo{height:70vw;min-height:0;object-fit:contain}.arrow{width:38px;height:48px}.thumb{flex-basis:96px;height:66px}.experience,.stay{padding:22vw 22px}.experience h1,.stay h1{font-size:16vw}.experience span{font-size:18px}.tour{padding:20vw 12px}.tour h1{font-size:14.5vw}.tour iframe{aspect-ratio:9/14}.stay form{grid-template-columns:1fr}.stay button,.stay small{grid-column:1}footer{padding:20vw 22px}footer h2{font-size:13vw}}
 @media(prefers-reduced-motion:reduce){.opening-film{display:none}.opening-painting{opacity:1!important}.opening-live-copy{display:none}}
+
+
+/* --- Painted balcony: second cinematic hero --- */
+.painted-balcony-hero{
+  position:relative;
+  min-height:100svh;
+  width:100%;
+  overflow:hidden;
+  background:#29271f;
+  isolation:isolate;
+}
+.painted-balcony-art{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  z-index:-3;
+}
+.painted-balcony-shade{
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background:
+    linear-gradient(90deg, rgba(19,20,15,.48) 0%, rgba(19,20,15,.22) 42%, rgba(19,20,15,.06) 72%),
+    linear-gradient(0deg, rgba(16,17,13,.26), rgba(16,17,13,0) 55%);
+}
+.painted-balcony-copy{
+  min-height:100svh;
+  max-width:1440px;
+  margin:0 auto;
+  padding:clamp(7rem,12vh,10rem) clamp(1.5rem,6vw,6.5rem) clamp(4rem,8vh,7rem);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:flex-start;
+  color:#f7f1e7;
+}
+.painted-balcony-kicker{
+  margin:0 0 1.15rem;
+  font-size:.7rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  font-weight:600;
+}
+.painted-balcony-copy h2{
+  margin:0;
+  max-width:900px;
+  font-family:var(--font-display, Georgia, serif);
+  font-size:clamp(3rem,6.2vw,6.8rem);
+  line-height:.91;
+  letter-spacing:-.045em;
+  font-weight:400;
+  text-wrap:balance;
+}
+.painted-balcony-deck{
+  margin:1.65rem 0 0;
+  font-family:var(--font-display, Georgia, serif);
+  font-style:italic;
+  font-size:clamp(1rem,1.35vw,1.3rem);
+}
+.painted-balcony-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.7rem;
+  margin-top:2rem;
+}
+.painted-balcony-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:.85rem 1.35rem;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  font-size:.68rem;
+  font-weight:600;
+  transition:background .25s ease,color .25s ease,border-color .25s ease;
+}
+.painted-balcony-btn-light{
+  color:#24251f;
+  background:#f5efe5;
+  border:1px solid #f5efe5;
+}
+.painted-balcony-btn-ghost{
+  color:#f8f3ea;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.68);
+  backdrop-filter:blur(3px);
+}
+.painted-balcony-btn:hover{transform:none}
+.painted-balcony-btn-light:hover{background:#fff;border-color:#fff}
+.painted-balcony-btn-ghost:hover{background:#f5efe5;color:#24251f;border-color:#f5efe5}
+@media (max-width:700px){
+  .painted-balcony-art{object-position:58% center}
+  .painted-balcony-shade{
+    background:linear-gradient(0deg,rgba(18,19,14,.58) 0%,rgba(18,19,14,.15) 68%,rgba(18,19,14,.06) 100%);
+  }
+  .painted-balcony-copy{
+    justify-content:flex-end;
+    padding:7rem 1.35rem 3rem;
+  }
+  .painted-balcony-copy h2{
+    font-size:clamp(2.75rem,13vw,4.6rem);
+    line-height:.94;
+  }
+  .painted-balcony-actions{width:100%}
+  .painted-balcony-btn{flex:1 1 auto}
+}
+
+
+/* 2026 boutique-hotel refinement: Peter & Paul x Chloe inspired, not copied */
+:root{
+  --paper:#f4efe7;
+  --paper-2:#ebe3d7;
+  --ink:#253027;
+  --wine:#71352f;
+  --sage:#899681;
+  --line:rgba(37,48,39,.18);
+  --cream:#fffaf1;
+}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink)}
+.site-header{background:linear-gradient(to bottom,rgba(20,27,22,.40),rgba(20,27,22,0));border-bottom:0;box-shadow:none}
+.site-header.is-scrolled{background:rgba(244,239,231,.93);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.site-header.is-scrolled a,.site-header.is-scrolled button{color:var(--ink)!important}
+.hero,.painted-balcony-hero{min-height:100svh}
+.hero video{filter:saturate(.92) contrast(.94) brightness(1.05)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(15,22,17,.38),rgba(15,22,17,.09) 52%,rgba(15,22,17,0) 76%),linear-gradient(0deg,rgba(12,18,14,.20),transparent 44%)}
+.hero-copy{max-width:720px}
+.hero-copy h1{font-size:clamp(4.25rem,8vw,8.7rem);line-height:.86;letter-spacing:-.055em;font-weight:400}
+.hero-copy p{max-width:560px;font-size:clamp(1.02rem,1.25vw,1.28rem);line-height:1.55}
+.hero .btn,.painted-balcony-btn{border-radius:0;min-height:48px;padding:.92rem 1.45rem;letter-spacing:.16em;font-size:.66rem}
+.section,section:not(.hero):not(.painted-balcony-hero){background:var(--paper)}
+.section-kicker,.eyebrow{color:var(--wine);letter-spacing:.18em}
+.section-title,h2{color:var(--ink);letter-spacing:-.035em}
+.gallery-grid{gap:clamp(10px,1.3vw,18px)}
+.gallery-card,.room-card,.editorial-card{border-radius:0;box-shadow:none;background:transparent}
+.gallery-card img,.room-card img,.editorial-card img{filter:saturate(.9) contrast(.96) brightness(1.03)}
+.painting-transition,.quote-band{background:var(--wine);color:var(--cream)}
+.painted-balcony-shade{background:linear-gradient(90deg,rgba(20,24,19,.30),rgba(20,24,19,.08) 55%,rgba(20,24,19,0) 78%),linear-gradient(0deg,rgba(13,17,14,.25),transparent 50%)}
+.painted-balcony-copy h2{font-size:clamp(3.4rem,6.5vw,7rem);line-height:.9;letter-spacing:-.05em}
+.painted-balcony-deck{font-style:normal;letter-spacing:.01em;max-width:520px}
+.matterport-section,.experience-section{background:#314036;color:#f4efe7}
+.matterport-section h2,.experience-section h2{color:#f8f3ea}
+.booking-section,.inquire-section{background:#e9dfd2}
+footer{background:#243027;color:#f5efe6}
+@media(max-width:760px){
+ .hero-copy h1{font-size:clamp(3.2rem,16vw,5.7rem);line-height:.9}
+ .hero-copy{padding-left:1.25rem;padding-right:1.25rem}
+ .hero::after{background:linear-gradient(0deg,rgba(13,18,14,.52),rgba(13,18,14,.05) 70%)}
+}
