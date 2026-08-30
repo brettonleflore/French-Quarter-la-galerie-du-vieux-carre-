@@ -58,3 +58,37 @@ document.getElementById('form')?.addEventListener('submit',e=>{
 
 // Deep-link directly to a room on the dedicated Residence page.
 (()=>{ const room=location.hash.replace('#',''); if(room && document.querySelector(`.room-tab[data-room="${room}"]`)){ activateRoom(room); setTimeout(()=>document.getElementById('galleries')?.scrollIntoView({behavior:'smooth'}),80); } })();
+
+// Quiet editorial reveals and a restrained balcony parallax.
+(()=>{
+  const reveals=[...document.querySelectorAll('.home-page .reveal')];
+  if(!('IntersectionObserver' in window)){reveals.forEach(el=>el.classList.add('in-view'));return;}
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in-view');io.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -4%'});
+  reveals.forEach(el=>io.observe(el));
+})();
+
+(()=>{
+  const art=document.querySelector('.home-page .parallax-art');
+  if(!art || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  let ticking=false;
+  const update=()=>{
+    const r=art.parentElement.getBoundingClientRect();
+    const progress=(innerHeight-r.top)/(innerHeight+r.height);
+    const y=(Math.max(0,Math.min(1,progress))-.5)*26;
+    art.style.transform=`translate3d(0,${y}px,0) scale(1.035)`;
+    ticking=false;
+  };
+  addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+  update();
+})();
+
+// Extended-stay inquiry drawer.
+(()=>{
+  const drawer=document.getElementById('stay-drawer');
+  if(!drawer) return;
+  const open=()=>{drawer.classList.add('is-open');drawer.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';setTimeout(()=>drawer.querySelector('input')?.focus(),350)};
+  const close=()=>{drawer.classList.remove('is-open');drawer.setAttribute('aria-hidden','true');document.body.style.overflow=''};
+  document.querySelectorAll('.stay-trigger').forEach(b=>b.addEventListener('click',open));
+  drawer.querySelectorAll('.stay-close').forEach(b=>b.addEventListener('click',close));
+  addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('is-open')) close();});
+})();
