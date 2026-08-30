@@ -1,2 +1,1 @@
-const form=document.getElementById("inquiryForm");
-form.addEventListener("submit",e=>{e.preventDefault();document.getElementById("formNote").textContent="This preview is ready to connect to your live booking destination.";});
+document.getElementById("form").addEventListener("submit",e=>{e.preventDefault();document.getElementById("note").textContent="This presentation form is ready to connect to your live booking destination.";});
