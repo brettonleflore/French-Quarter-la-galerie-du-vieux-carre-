@@ -27,3 +27,6 @@ A conservative sharpness audit was run over the existing gallery set. 2 strong b
 
 ## GitHub-optimized build
 Photography has been web-optimized at high quality (progressive JPEG, quality 88, 4:4:4 chroma, maximum 2560px dimension). No blur filters are applied to gallery photography. This keeps the editorial look while substantially reducing repository and deployment size.
+
+## GitHub compact edition
+This deployment keeps only assets actually referenced by the live site. Photography remains up to 2000px on the long edge with high-quality progressive JPEG compression, and the stabilized hero video is H.264 web-optimized with fast-start. This reduces repository upload size without changing the visual design or applying blur to the photographs.
