@@ -62,3 +62,31 @@ document.getElementById("form").addEventListener("submit",e=>{e.preventDefault()
    setTimeout(()=>document.getElementById('galleries')?.scrollIntoView({behavior:'smooth',block:'start'}),150);
  });
 })();
+
+
+// Second hero plays only while it is on screen, conserving mobile bandwidth/battery.
+(()=>{
+ const hero=document.getElementById('old-walls-film');
+ if(!hero) return;
+ const film=hero.querySelector('.old-walls-film');
+ const bg=hero.querySelector('.old-walls-bg');
+ const sound=document.getElementById('filmSound');
+ if(!film||!bg) return;
+ const sync=()=>{ if(Math.abs((bg.currentTime||0)-(film.currentTime||0))>.16) bg.currentTime=film.currentTime||0; };
+ film.addEventListener('timeupdate',sync);
+ film.addEventListener('seeked',sync);
+ const play=()=>{film.play().catch(()=>{});bg.play().catch(()=>{});};
+ const pause=()=>{film.pause();bg.pause();};
+ if('IntersectionObserver' in window){
+   const io=new IntersectionObserver(entries=>entries.forEach(e=>e.isIntersecting&&e.intersectionRatio>.28?play():pause()),{threshold:[0,.28,.6]});
+   io.observe(hero);
+ }else{play()}
+ sound?.addEventListener('click',async()=>{
+   const turningOn=film.muted;
+   film.muted=!turningOn;
+   bg.muted=true;
+   sound.textContent=turningOn?'Sound off':'Sound on';
+   sound.setAttribute('aria-label',turningOn?'Turn film sound off':'Turn film sound on');
+   if(turningOn){try{await film.play()}catch(e){}}
+ });
+})();
