@@ -27,3 +27,32 @@ if (closingHero && closingVideo) {
     if (mark) mark.style.opacity = show ? '.9' : '0';
   });
 }
+
+// Restrained reveal timing gives the long page a single cinematic rhythm.
+const revealTargets = document.querySelectorAll([
+  '.intro .kicker',
+  '.intro h2',
+  '.intro .lede',
+  '.gallery-heading',
+  '.gallery-item',
+  '.tour-heading',
+  '.matterport-frame',
+  '.tour-link',
+  '.statement-inner',
+  '.stay-copy',
+  '.stay-panel',
+  'footer > *'
+].join(','));
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reduceMotion && 'IntersectionObserver' in window) {
+  revealTargets.forEach((el) => el.classList.add('reveal-soft'));
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 0px -9% 0px', threshold: 0.08 });
+  revealTargets.forEach((el) => revealObserver.observe(el));
+}
