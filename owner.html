@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Owner Dashboard | La Galerie du Vieux Carré</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="owner.css">
+</head>
+<body>
+<div id="login-view" class="login-shell">
+  <div class="login-card"><p class="kicker">Private Access</p><h1>Owner Dashboard</h1><p>La Galerie du Vieux Carré</p><form id="login-form"><label>Password<input id="owner-password" type="password" autocomplete="current-password" required></label><button>Enter dashboard</button><div id="login-status" class="status"></div></form><a href="/">← Return to residence</a></div>
+</div>
+<div id="dashboard" class="dashboard" hidden>
+  <aside class="sidebar"><div><div class="mark">LG</div><p>La Galerie<br>du Vieux Carré</p></div><nav><button data-view="overview" class="active">Overview</button><button data-view="inquiries">Booking Requests</button><button data-view="analytics">Analytics</button></nav><div class="side-bottom"><a href="/" target="_blank">View website ↗</a><button id="logout">Sign out</button></div></aside>
+  <main class="dash-main">
+    <header><div><p class="kicker">Private Residence</p><h1 id="view-title">Overview</h1></div><div class="date" id="today"></div></header>
+    <section id="overview-view" class="view-panel">
+      <div class="metric-grid"><article><span>New inquiries</span><strong id="m-new">—</strong><small>awaiting review</small></article><article><span>Requests · 30 days</span><strong id="m-30">—</strong><small>booking inquiries</small></article><article><span>Site views · 30 days</span><strong id="m-views">—</strong><small>tracked pageviews</small></article><article><span>Unique visitors · 30 days</span><strong id="m-unique">—</strong><small>approx. sessions</small></article></div>
+      <section class="panel"><div class="panel-head"><div><p class="kicker">Recent Activity</p><h2>Latest booking requests</h2></div><button class="text-button" data-jump="inquiries">View all →</button></div><div id="recent-list" class="request-list"></div></section>
+    </section>
+    <section id="inquiries-view" class="view-panel" hidden><div class="panel"><div class="panel-head"><div><p class="kicker">Guest Contact</p><h2>Booking requests</h2></div><button id="export-csv" class="outline-button">Export CSV</button></div><div class="filters"><button data-filter="all" class="active">All</button><button data-filter="new">New</button><button data-filter="contacted">Contacted</button><button data-filter="closed">Closed</button></div><div id="inquiry-list" class="request-list full"></div></div></section>
+    <section id="analytics-view" class="view-panel" hidden><div class="metric-grid"><article><span>Views · 7 days</span><strong id="a-7">—</strong></article><article><span>Views · 30 days</span><strong id="a-30">—</strong></article><article><span>Unique · 30 days</span><strong id="a-unique">—</strong></article><article><span>Inquiry conversion</span><strong id="a-conv">—</strong></article></div><div class="analytics-grid"><section class="panel"><p class="kicker">Traffic</p><h2>Daily views · 14 days</h2><div id="chart" class="bar-chart"></div></section><section class="panel"><p class="kicker">Top Pages</p><h2>Where guests linger</h2><div id="top-pages" class="top-pages"></div></section></div></section>
+  </main>
+</div>
+<script src="owner.js"></script>
+</body></html>

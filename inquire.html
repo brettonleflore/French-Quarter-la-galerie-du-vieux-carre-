@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11100e" />
+  <title>Inquire | La Galerie du Vieux Carré</title>
+  <meta name="description" content="Request a stay at La Galerie du Vieux Carré, a private three-bedroom, three-bathroom French Quarter residence in New Orleans." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="inquire.css" />
+</head>
+<body>
+  <header class="booking-hero">
+    <div class="booking-image" role="img" aria-label="La Galerie du Vieux Carré French Quarter balcony"></div>
+    <div class="booking-shade"></div>
+    <nav class="booking-nav">
+      <a class="brand" href="/">LGVC</a>
+      <a class="return" href="/">Return to the residence</a>
+    </nav>
+    <div class="booking-title">
+      <p>LA GALERIE DU VIEUX CARRÉ · NEW ORLEANS</p>
+      <h1>Begin your stay.</h1>
+      <span>A private three-bedroom, three-bathroom residence in the heart of the French Quarter.</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-intro">
+      <div>
+        <p class="kicker">Private Inquiry</p>
+        <h2>Tell us when<br>you’d like to arrive.</h2>
+      </div>
+      <p class="lede">Share your preferred dates and a few details about your stay. We’ll review your request personally and follow up with availability and next steps.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="inquiry-form" class="inquiry-form" autocomplete="on">
+        <div class="form-grid">
+          <label>Full name<input name="name" type="text" autocomplete="name" required></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+          <label>Number of guests<input name="guests" type="number" min="1" max="12" value="2" required></label>
+          <label>Arrival<input name="check_in" type="date" required></label>
+          <label>Departure<input name="check_out" type="date" required></label>
+          <label class="wide">What brings you to New Orleans?<textarea name="message" rows="5" placeholder="Tell us anything that would help us make your stay exceptional."></textarea></label>
+          <input class="honeypot" name="company" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </div>
+        <div class="form-foot">
+          <p>Submitting this request does not confirm a reservation. We’ll contact you directly regarding availability.</p>
+          <button type="submit">Send inquiry</button>
+        </div>
+        <div id="form-status" class="form-status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="booking-note">
+      <span>✦</span>
+      <blockquote>“Come for the city. Stay for the atmosphere.”</blockquote>
+      <a href="/">Return to La Galerie du Vieux Carré →</a>
+    </section>
+  </main>
+
+  <footer><span>La Galerie du Vieux Carré</span><span>New Orleans, Louisiana</span></footer>
+  <script src="inquire.js"></script>
+  <script src="analytics.js" defer></script>
+</body>
+</html>

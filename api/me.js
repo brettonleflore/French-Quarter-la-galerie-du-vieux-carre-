@@ -1,0 +1,1 @@
+const{validSession,json}=require('./_lib');module.exports=(req,res)=>validSession(req)?json(res,200,{ok:true}):json(res,401,{error:'Unauthorized'});
