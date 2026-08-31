@@ -1,4 +1,4 @@
-const cinematicVideos = document.querySelectorAll('.hero-video, .closing-hero-video');
+const cinematicVideos = document.querySelectorAll('.hero-video, .intro-film-video, .closing-hero-video');
 
 cinematicVideos.forEach((video) => {
   video.muted = true;
