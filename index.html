@@ -1,159 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>La Galerie du Vieux Carré | Private French Quarter Residence</title>
-<meta name="description" content="La Galerie du Vieux Carré is a layered private residence in New Orleans' French Quarter, offered for extended stays of 30 nights or longer."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11100e" />
+  <title>La Galerie Vieux Carré</title>
+  <meta name="description" content="La Galerie Vieux Carré — an intimate New Orleans stay in the heart of the historic French Quarter." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="home-page">
-<div class="grain" aria-hidden="true"></div>
+<body>
+  <header class="hero" id="home">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="assets/hero.MOV" type="video/quicktime" />
+    </video>
+    <div class="hero-overlay"></div>
 
-<header class="site-nav home-nav" aria-label="Primary navigation">
-  <a class="brand" href="#top" aria-label="La Galerie du Vieux Carré home">
-    <span class="brand-mark">LG<br>VC</span>
-    <span class="brand-name">La Galerie<br>du Vieux Carré</span>
-  </a>
-  <nav class="desktop-nav" aria-label="Site">
-    <a href="residence.html">La Résidence</a>
-    <a href="#rooms">Rooms</a>
-    <a href="#tour">Digital Tour</a>
-    <a href="#quartier">Le Quartier</a>
-  </nav>
-  <button class="book-nav stay-trigger" type="button">Private Stays · 30+ Nights</button>
-</header>
+    <nav class="nav">
+      <a class="nav-brand" href="#home" aria-label="La Galerie Vieux Carré home">LGVC</a>
+      <div class="nav-links">
+        <a href="#story">The Gallery</a>
+        <a href="#stay">Stay</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
 
-<main>
-  <section class="cinema-hero opening-hero" id="top" aria-label="La Galerie du Vieux Carré">
-    <img class="opening-painting" src="assets/hero-approved.jpg" alt="Painterly view from the galerie balcony in the French Quarter"/>
-    <video class="cinema-film opening-film" src="assets/video/hotel-hero-film.mp4" autoplay loop muted playsinline poster="assets/hero-approved.jpg" preload="metadata" aria-label="A cinematic walk through La Galerie du Vieux Carré"></video>
-    <div class="cinema-shade" aria-hidden="true"></div>
-    <div class="opening-live-copy">
-      <p class="eyebrow">A PRIVATE RESIDENCE · NEW ORLEANS</p>
-      <h1>La Galerie<br><em>du Vieux Carré</em></h1>
-      <p class="hero-deck">Live inside the atmosphere of the French Quarter.</p>
-      <a class="hero-text-link" href="residence.html">Explore the Residence <span>↗</span></a>
-    </div>
-    <a class="scroll-cue" href="#balcony" aria-label="Discover the residence"><span>Discover</span><i></i></a>
-  </section>
-
-  <section class="painted-balcony-hero" id="balcony" aria-label="The painted balcony">
-    <img class="painted-balcony-art parallax-art" src="assets/hero-approved.jpg" alt="Painted view from the balcony of La Galerie du Vieux Carré"/>
-    <div class="painted-balcony-shade" aria-hidden="true"></div>
-    <div class="balcony-caption reveal">
-      <p>LA GALERIE · ABOVE THE VIEUX CARRÉ</p>
-      <h2>A balcony<br><em>outside of time.</em></h2>
-      <span>Morning light, old ironwork and the city moving below.</span>
-    </div>
-  </section>
-
-  <section class="quiet-intro" aria-label="About the residence">
-    <div class="quiet-number">01</div>
-    <div class="quiet-copy reveal">
-      <p class="section-kicker">THE RESIDENCE · VIEUX CARRÉ</p>
-      <h2>Old New Orleans,<br><em>edited for now.</em></h2>
-      <p>Historic architecture, collected interiors and the intimacy of a private home. Nothing here is meant to feel standardized; the pleasure is in the layers.</p>
-      <a class="text-link" href="residence.html">Enter the residence <span>↗</span></a>
-    </div>
-    <div class="quiet-images reveal">
-      <figure class="quiet-main"><img src="assets/rooms/living/living-01.jpg" alt="Living room at La Galerie du Vieux Carré"/></figure>
-      <figure class="quiet-detail"><img src="assets/rooms/balcony/balcony-01.jpg" alt="Balcony detail at La Galerie du Vieux Carré"/></figure>
-    </div>
-  </section>
-
-  <section class="point-of-view" id="experience" aria-label="A house with a point of view">
-    <img src="assets/rooms/dining/dining-new-02.jpg" alt="Dining room at La Galerie du Vieux Carré"/>
-    <div class="pov-shade" aria-hidden="true"></div>
-    <div class="pov-copy reveal">
-      <p>LGVC / L’EXPÉRIENCE</p>
-      <h2>A house with<br><em>a point of view.</em></h2>
-      <div class="pov-caption">Layered, collected and unmistakably New Orleans. Come for the architecture; stay for the feeling of having your own address in the Vieux Carré.</div>
-    </div>
-  </section>
-
-  <section class="room-chapters" id="rooms" aria-label="Rooms of the residence">
-    <div class="chapters-heading reveal">
-      <p class="section-kicker">ROOMS AS CHAPTERS</p>
-      <h2>A private<br><em>mythology.</em></h2>
-      <span>Each room has its own atmosphere, light and point of view.</span>
+    <div class="hero-content">
+      <div class="eyebrow">NEW ORLEANS</div>
+      <h1><span>La Galerie</span><em>Vieux Carré</em></h1>
+      <p class="hero-sub">A private residence shaped by history, art, and the atmosphere of the French Quarter.</p>
+      <a class="hero-cta" href="#stay">Discover the Residence</a>
     </div>
 
-    <article class="room-chapter chapter-left reveal">
-      <a class="chapter-image" href="residence.html#bedroom1"><img src="assets/rooms/bedroom1/bedroom1-new-04.jpg" alt="Bedroom One"/></a>
-      <div class="chapter-copy"><small>CHAPTER I · LA CHAMBRE</small><h3>Bedroom One</h3><p>Quiet, romantic and richly layered—a room that rewards looking twice.</p><a href="residence.html#bedroom1">View the room ↗</a></div>
-      <figure class="chapter-detail"><img src="assets/rooms/bedroom1/bedroom1-new-05.jpg" alt="Bedroom One detail"/></figure>
-    </article>
+    <div class="scroll-cue">SCROLL</div>
+  </header>
 
-    <article class="room-chapter chapter-right reveal">
-      <a class="chapter-image" href="residence.html#bedroom2"><img src="assets/rooms/bedroom2/bedroom2-editorial-03.jpg" alt="Bedroom Two"/></a>
-      <div class="chapter-copy"><small>CHAPTER II · LA CHAMBRE</small><h3>Bedroom Two</h3><p>Bohemian, intimate and personal—the opposite of a conventional hotel room.</p><a href="residence.html#bedroom2">View the room ↗</a></div>
-      <figure class="chapter-detail"><img src="assets/rooms/bedroom2/bedroom2-editorial-05.jpg" alt="Bedroom Two detail"/></figure>
-    </article>
+  <main>
+    <section class="intro" id="story">
+      <p class="kicker">A New Orleans Address</p>
+      <h2>Old-world character.<br>Quietly contemporary.</h2>
+      <p class="lede">La Galerie Vieux Carré is conceived as an intimate, design-led stay where historic architecture and collected interiors set the rhythm. The experience is less hotel, more private world.</p>
+    </section>
 
-    <article class="room-chapter chapter-left reveal">
-      <a class="chapter-image" href="residence.html#courtyard"><img src="assets/rooms/courtyard/courtyard-editorial-08.jpg" alt="The courtyard"/></a>
-      <div class="chapter-copy"><small>CHAPTER III · LA COUR</small><h3>The Courtyard</h3><p>A secluded counterpoint to the street outside: green, private and distinctly New Orleans.</p><a href="residence.html#courtyard">View the courtyard ↗</a></div>
-      <figure class="chapter-detail"><img src="assets/rooms/courtyard/courtyard-editorial-09.jpg" alt="Courtyard detail"/></figure>
-    </article>
-  </section>
+    <section class="statement">
+      <div class="statement-inner">
+        <span class="ornament">✦</span>
+        <blockquote>“Come for the city. Stay for the atmosphere.”</blockquote>
+      </div>
+    </section>
 
-  <section class="detail-montage" aria-label="Architectural details">
-    <figure class="montage-a reveal"><img src="assets/rooms/living/living-new-03.jpg" alt="Architectural detail in the living room"/></figure>
-    <div class="montage-words reveal"><p>OBJECTS · LIGHT · PATINA</p><h2>The beauty is<br><em>in the accumulation.</em></h2></div>
-    <figure class="montage-b reveal"><img src="assets/rooms/kitchen/kitchen-editorial-04.jpg" alt="Kitchen detail"/></figure>
-    <figure class="montage-c reveal"><img src="assets/rooms/bathroom1/bathroom1-editorial-03.jpg" alt="Bathroom detail"/></figure>
-  </section>
+    <section class="stay" id="stay">
+      <div class="stay-copy">
+        <p class="kicker">The Residence</p>
+        <h2>Designed to be remembered.</h2>
+        <p>Generous rooms, evocative details, and the unmistakable romance of the Vieux Carré create a stay that feels cinematic without trying too hard.</p>
+        <a class="text-link" href="#contact">Inquire about your stay →</a>
+      </div>
+      <div class="stay-panel" aria-label="Decorative architectural panel">
+        <div class="stay-monogram">LG</div>
+      </div>
+    </section>
+  </main>
 
-  <section class="tour" id="tour" aria-label="Digital tour">
-    <div class="tour-head reveal"><p>LGVC / DIGITAL TWIN</p><h2>Step inside<br><em>before you arrive.</em></h2></div>
-    <iframe allow="xr-spatial-tracking; fullscreen; autoplay" allowfullscreen loading="lazy" src="https://my.matterport.com/show/?m=3wJhsnciyr5&play=1&qs=1&vr=0&dh=0&gt=0&hr=0" title="La Galerie du Vieux Carré 3D Tour"></iframe>
-  </section>
-
-  <section class="quartier" id="quartier" aria-label="The French Quarter">
-    <img src="assets/rooms/balcony/balcony-04.jpg" alt="View from the residence toward the French Quarter"/>
-    <div class="quartier-shade" aria-hidden="true"></div>
-    <div class="quartier-copy reveal"><p>LE QUARTIER · NEW ORLEANS</p><h2>Your own address<br><em>in the Vieux Carré.</em></h2><span>Step outside into a neighborhood of old streets, galleries, music, restaurants and architecture—then come home to your own front door.</span></div>
-  </section>
-
-  <section class="review-section" aria-label="Guest perspective">
-    <p class="section-kicker">FROM THE GUEST BOOK</p>
-    <blockquote>“There is a certain magic that lives in these old walls.”</blockquote>
-    <span>LA GALERIE DU VIEUX CARRÉ</span>
-  </section>
-
-  <section class="private-stays" id="stay" aria-label="Extended private stays">
-    <div class="stay-copy reveal">
-      <p>PRIVATE STAYS · 30 NIGHTS OR LONGER</p>
-      <h2>Stay awhile.<br><em>Live like you belong here.</em></h2>
-      <span>La Galerie is offered as a private residence for extended stays. Tell us your dates and we’ll begin a tailored inquiry.</span>
-      <button class="stay-cta stay-trigger" type="button">Begin a private-stay inquiry</button>
+  <footer id="contact">
+    <div>
+      <div class="footer-brand">La Galerie Vieux Carré</div>
+      <p>New Orleans, Louisiana</p>
     </div>
-  </section>
-</main>
+    <a href="mailto:reservations@example.com">Reservations</a>
+  </footer>
 
-<footer class="home-footer"><b>LG<br>VC</b><h2>La Galerie du Vieux Carré</h2><span>NEW ORLEANS, LOUISIANA</span></footer>
-
-<div class="stay-drawer" id="stay-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
-  <button class="drawer-backdrop stay-close" type="button" aria-label="Close private stay inquiry"></button>
-  <div class="drawer-panel">
-    <button class="drawer-close stay-close" type="button" aria-label="Close">×</button>
-    <p>PRIVATE RESIDENCE · EXTENDED STAYS</p>
-    <h2 id="drawer-title">Your New Orleans<br><em>address for a while.</em></h2>
-    <span class="drawer-minimum">30 NIGHTS MINIMUM</span>
-    <form id="form" class="drawer-form">
-      <label>Arrival<input id="arrival" type="date" required></label>
-      <label>Departure<input id="departure" type="date" required></label>
-      <label>Guests<select id="guests"><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option></select></label>
-      <label>Email<input id="email" type="email" placeholder="you@example.com" required></label>
-      <button type="submit">Request a 30+ night stay</button>
-      <small id="note">Extended-stay inquiries only · minimum 30 nights.</small>
-    </form>
-  </div>
-</div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
